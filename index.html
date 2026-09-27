@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Language of Wolves</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:url("https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=1600&q=80") center/cover fixed;
+color:white;
+min-height:100vh;
+}
+
+.overlay{
+background:rgba(6,15,28,.72);
+min-height:100vh;
+padding:40px 15px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+background:rgba(18,28,45,.78);
+backdrop-filter:blur(12px);
+border-radius:25px;
+padding:35px;
+box-shadow:0 0 40px rgba(0,0,0,.55);
+animation:fade 1s;
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(25px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+h1{
+font-family:'Cinzel',serif;
+font-size:42px;
+text-align:center;
+margin-bottom:10px;
+}
+
+.subtitle{
+text-align:center;
+color:#dbeafe;
+margin-bottom:30px;
+}
+
+.section{
+margin-top:28px;
+}
+
+h2{
+color:#8fd3ff;
+margin-bottom:15px;
+}
+
+.question{
+background:rgba(255,255,255,.07);
+padding:16px;
+border-radius:15px;
+margin-bottom:15px;
+transition:.3s;
+}
+
+.question:hover{
+background:rgba(255,255,255,.12);
+}
+
+label{
+display:block;
+margin-top:8px;
+cursor:pointer;
+}
+
+input[type=text]{
+width:200px;
+padding:8px 10px;
+border-radius:8px;
+border:none;
+margin-top:8px;
+font-size:15px;
+background:white;
+color:#111827;
+}
+
+button{
+width:100%;
+padding:15px;
+margin-top:30px;
+border:none;
+border-radius:15px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+background:linear-gradient(90deg,#2563eb,#38bdf8);
+color:white;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.02);
+}
+
+#result{
+display:none;
+margin-top:25px;
+padding:20px;
+border-radius:15px;
+text-align:center;
+font-size:24px;
+font-weight:bold;
+}
+
+.good{background:#166534;}
+.mid{background:#92400e;}
+.bad{background:#991b1b;}
+
+footer{
+text-align:center;
+margin-top:25px;
+color:#cbd5e1;
+font-size:14px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="overlay">
+
+<div class="container">
+
+<h1>🐺 The Language of Wolves</h1>
+<p class="subtitle">Interactive 3-Minute Quiz</p>
+
+<div class="section">
+
+<h2>1. True or False</h2>
+
+<div class="question">
+<p><b>1.</b> The leaders of a wolf pack are usually the mother and father.</p>
+<label><input type="radio" name="q1" value="T"> True</label>
+<label><input type="radio" name="q1" value="F"> False</label>
+</div>
+
+<div class="question">
+<p><b>2.</b> A submissive wolf raises its tail high.</p>
+<label><input type="radio" name="q2" value="T"> True</label>
+<label><input type="radio" name="q2" value="F"> False</label>
+</div>
+
+<div class="question">
+<p><b>3.</b> Growling is often used as a warning.</p>
+<label><input type="radio" name="q3" value="T"> True</label>
+<label><input type="radio" name="q3" value="F"> False</label>
+</div>
+
+<div class="question">
+<p><b>4.</b> Barking is the main form of long-distance communication.</p>
+<label><input type="radio" name="q4" value="T"> True</label>
+<label><input type="radio" name="q4" value="F"> False</label>
+</div>
+
+<div class="question">
+<p><b>5.</b> Wolves mark their territory with scent.</p>
+<label><input type="radio" name="q5" value="T"> True</label>
+<label><input type="radio" name="q5" value="F"> False</label>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>2. Choose the Correct Answer</h2>
+
+<div class="question">
+<p><b>6.</b> What does an omega wolf do when approaching another wolf?</p>
+<label><input type="radio" name="q6" value="a"> Raises its tail</label>
+<label><input type="radio" name="q6" value="b"> Assumes a crouched position</label>
+<label><input type="radio" name="q6" value="c"> Howls loudly</label>
+</div>
+
+<div class="question">
+<p><b>7.</b> Which sound calls the pack together?</p>
+<label><input type="radio" name="q7" value="a"> Bark</label>
+<label><input type="radio" name="q7" value="b"> Pack howl</label>
+<label><input type="radio" name="q7" value="c"> Whimper</label>
+</div>
+
+<div class="question">
+<p><b>8.</b> Rolling over and showing the belly means...</p>
+<label><input type="radio" name="q8" value="a"> Aggression</label>
+<label><input type="radio" name="q8" value="b"> Dominance</label>
+<label><input type="radio" name="q8" value="c"> Passive submission</label>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>3. Fill in the Blanks</h2>
+
+<p style="margin-bottom:10px;">
+Use these words:
+<b>howl • growl • belly • scent • tail</b>
+</p>
+
+<div class="question">
+1. Wolves use <br>
+<input id="w1" type="text"> for long-distance communication.
+</div>
+
+<div class="question">
+2. A submissive wolf tucks its <br>
+<input id="w2" type="text"> between its legs.
+</div>
+
+<div class="question">
+3. Wolves mark their territory with <br>
+<input id="w3" type="text">.
+</div>
+
+<div class="question">
+4. When giving up, a wolf may show its <br>
+<input id="w4" type="text">.
+</div>
+
+<div class="question">
+5. A warning sound made by wolves is a <br>
+<input id="w5" type="text">.
+</div>
+
+</div>
+
+<button onclick="checkQuiz()">🐾 Check My Answers</button>
+
+<div id="result"></div>
+
+<footer>
+Made for English • The Language of Wolves
+</footer>
+
+</div>
+
+</div>
+
+<script>
+const answers = {
+q1:"T",
+q2:"F",
+q3:"T",
+q4:"F",
+q5:"T",
+q6:"b",
+q7:"b",
+q8:"c",
+w1:"howl",
+w2:"tail",
+w3:"scent",
+w4:"belly",
+w5:"growl"
+};
+
+function checkQuiz(){
+
+let score = 0;
+
+for(let i=1;i<=8;i++){
+
+const selected = document.querySelector(`input[name="q${i}"]:checked`);
+
+if(selected && selected.value === answers[`q${i}`]){
+score++;
+}
+
+}
+
+for(let i=1;i<=5;i++){
+
+const input = document.getElementById(`w${i}`);
+const value = input.value.trim().toLowerCase();
+
+if(value === answers[`w${i}`]){
+score++;
+input.style.background="#bbf7d0";
+}
+else{
+input.style.background="#fecaca";
+}
+
+}
+
+const result=document.getElementById("result");
+
+result.style.display="block";
+result.classList.remove("good","mid","bad");
+
+if(score>=11){
+
+result.classList.add("good");
+result.innerHTML=`🐺 Excellent!<br><span style="font-size:34px">${score} / 13</span>`;
+
+}
+else if(score>=8){
+
+result.classList.add("mid");
+result.innerHTML=`🌙 Good Job!<br><span style="font-size:34px">${score} / 13</span>`;
+
+}
+else{
+
+result.classList.add("bad");
+result.innerHTML=`❄ Keep Practicing!<br><span style="font-size:34px">${score} / 13</span>`;
+
+}
+
+result.scrollIntoView({behavior:"smooth"});
+
+}
+</script>
+
+</body>
+</html>
